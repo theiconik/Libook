@@ -17,31 +17,60 @@
     />
   </head>
   <body>
-    <div class="container uk-margin-medium-top">
+    <div class="container uk-margin-small-top">
+      <!-- Heading -->
       <h1 class="uk-text-primary uk-text-center uk-margin-medium">
          <i class="fas fa-book-open fa-rotate-330"></i>Libook
       </h1>
+      <!-- Form -->
       <form class="book-form uk-flex uk-flex-center">
         <fieldset class="uk-fieldset">
           <legend class="uk-legend uk-text-center uk-margin-left-small">Enter the book</legend>
 
           <div class="uk-margin">
-            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="Book Name" />
+            <input class="uk-input uk-margin-left uk-width-large" type="text" id="book" placeholder="Book Name" />
           </div>
 
           <div class="uk-margin">
-            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="Author Name" />
+            <input class="uk-input uk-margin-left uk-width-large" type="text" id="author" placeholder="Author Name" />
           </div>
 
           <div class="uk-margin">
-            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="ISBN" />
+            <input class="uk-input uk-margin-left uk-width-large" type="text" id="isbn" placeholder="ISBN" />
           </div>
 
           <div class="uk-margin">
-            <input class="uk-button uk-button-primary uk-margin-left uk-width-medium" type="submit" value="Add Book"/>
+            <input class="uk-button uk-button-primary uk-margin-left uk-width-large" type="submit" value="Add Book"/>
           </div>
         </fieldset>
       </form>
+      <!-- Table -->
+      <table class="uk-table uk-table-small uk-table-hover  uk-table-divider">
+        <thead>
+            <tr>
+                <th class="uk-text-center">Book Name</th>
+                <th class="uk-text-center">Author Name</th>
+                <th class="uk-text-center">ISBN Code</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+            <!-- <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr> -->
+        </tbody>
+    </table>
     </div>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
