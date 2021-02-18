@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container uk-margin-small-top">
@@ -23,7 +24,7 @@
          <i class="fas fa-book-open fa-rotate-330"></i>Libook
       </h1>
       <!-- Form -->
-      <form class="book-form uk-flex uk-flex-center">
+      <form class="book-form uk-flex uk-flex-center" id="book-form">
         <fieldset class="uk-fieldset">
           <legend class="uk-legend uk-text-center uk-margin-left-small">Enter the book</legend>
 
@@ -51,6 +52,7 @@
                 <th class="uk-text-center">Book Name</th>
                 <th class="uk-text-center">Author Name</th>
                 <th class="uk-text-center">ISBN Code</th>
+                <th class="uk-text-center">Discard</th>
             </tr>
         </thead>
         <tbody id="book-list">
