@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css"
+    />
+  </head>
+  <body>
+    <div class="container uk-margin-medium-top">
+      <h1 class="uk-text-primary uk-text-center uk-margin-medium">
+         <i class="fas fa-book-open fa-rotate-330"></i>Libook
+      </h1>
+      <form class="book-form uk-flex uk-flex-center">
+        <fieldset class="uk-fieldset">
+          <legend class="uk-legend uk-text-center uk-margin-left-small">Enter the book</legend>
+
+          <div class="uk-margin">
+            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="Book Name" />
+          </div>
+
+          <div class="uk-margin">
+            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="Author Name" />
+          </div>
+
+          <div class="uk-margin">
+            <input class="uk-input uk-margin-left uk-width-medium" type="text" placeholder="ISBN" />
+          </div>
+
+          <div class="uk-margin">
+            <input class="uk-button uk-button-primary uk-margin-left uk-width-medium" type="submit" value="Add Book"/>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
